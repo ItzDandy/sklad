@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skladová správa</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="sklad">
+        <h1>Skladová správa</h1>
+        <input type="number" id="filtvstup" placeholder="Hranice množství">
+        <button onclick="filtmn()">Filtrovat</button>
+        <button id="zrusitfilt">Zrušit filtr</button>
+        <button onclick="nejdržší()">Vyhledat nejdražší produkt</button>
+                <button onclick="celkem()">Vypočítat celkovou hodnotu zásob</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Název</th>
+                    <th>Cena / kus</th>
+                    <th>Počet na skladě</th>
+                    <th>Změna množství</th>
+                    <th>Aktualizace</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+            </tbody>
+        </table>
+    </div>
+    <div id="vyfiltrprodutk"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
